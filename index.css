@@ -84,8 +84,8 @@ nav .fa{
 }
 
 .hero-btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #f3b184;
+    background: #f3b184;
 }
 
 
@@ -98,7 +98,7 @@ nav .fa{
     .nav-links
     {
         position: fixed;
-        background: #f44336;
+        background: #f3b184;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -149,7 +149,7 @@ p{
   
 .course-col{
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #fcd3b8;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -200,7 +200,7 @@ h3{
     transition: .5s;
 }
 .layer:hover{
-    background: rgba(226, 0, 0, 0.7);
+    background: #f3b184;
 }
 .layer h3{
     width: 100%;
@@ -260,7 +260,7 @@ h3{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #fff3f3;
+    background: #fcd3b8;
     padding: 25px;
     cursor: pointer;
     display: flex;
@@ -279,7 +279,7 @@ h3{
     text-align: left;
 }
 .testimonial-col .fa{
-    color: #f44336;
+    color: #f3b184;
 }
 
 @media(max-width:700px){
@@ -328,11 +328,11 @@ h3{
 }
 
 .icons .fa{
-    color: #f44336;
+    color: #f3b184;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
 }
 .fa-heart-o{
-    color: #f44336;
+    color: #f3b184;
 }
