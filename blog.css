@@ -275,7 +275,8 @@ h3{
 }
 .blog-left p{
     color: #999;
-    padding: 0;
+    padding: 5;
+    font-size:18px;
 }
 
 .blog-right h3{
