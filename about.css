@@ -42,26 +42,26 @@
   
   .profiles {
     display: flex;
-    justify-content: space-around;
     margin: 20px 80px;
+    justify-content: space-around;
   }
   
   .profile {
     flex-basis: 260px;
+    background-color: #c1e1ec;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
   }
   
   .profile .profile-img {
-    height: 260px;
-    width: 260px;
+    margin-top: 30px;
+    width: 50%;
     border-radius: 50%;
-    filter: grayscale(100%);
     cursor: pointer;
     transition: 400ms;
   }
   
-  .profile:hover .profile-img {
-    filter: grayscale(0);
-  }
   
   .user-name {
     margin-top: 30px;
@@ -70,10 +70,11 @@
   }
   
   .profile h5 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 100;
     letter-spacing: 3px;
     color: black;
+    text-align: center;
   }
   
   .profile p {
@@ -452,7 +453,7 @@ h3{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/smartphone.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -510,7 +511,7 @@ h3{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/smartphone.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
