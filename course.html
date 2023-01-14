@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="course.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
 </head>
 <body>
     <section class="sub-header">
@@ -23,14 +25,14 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-            <h1 style="color:khaki">Coding Our Future</h1>
+            <h1 style="color:white">Coding Our Future</h1>
     </section>
     
     
 <!---------- course ----------->
     
     <section class="course">
-        <h1 style="color:aquamarine">Our Programs</h1>
+        <h1 style="color:black">Our Programs</h1>
         <p>Begin your journey in Coding</p>
         <div class="row">
             <div class="course-col">
@@ -43,40 +45,254 @@
             </div>
             <div class="course-col">
                 <h3>Web Development/Game Development/Programming</h3>
-                <p>Students learn how to create their own websites.</p>
+                <p>Students would learn how to develop their own websites, mobile games, and software applications through the teachings of how to use engines and programming languages to code.</p>
             </div>
         </div>
     </section>
     
 <!---------- Facilities ---------->
     
-    <section class="facility">
-        <h1>Our Facilities</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="row">
-                <div class="facility-col">
-                    <img src="images/cs.jpeg">
-                    <h3>World Class Library</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+    <section class="signup">
+        <div class="container">
+            <header id = "title">Student Registration</header>
+    
+            <form action="#">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title"> Student Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Student Name</label>
+                                <input type="text" placeholder="Enter student name" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Date of Birth</label>
+                                <input type="date" placeholder="Enter birth date" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Student Email (NA if student doesn't have one)</label>
+                                <input type="text" placeholder="Enter your email" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Area of Interest</label>
+                                <input type="text" placeholder="Pick one or more courses (above)" required>
+                            </div>
+                                
+                            <div class="input-field">
+                                <label>Programming experiences</label>
+                                <input type="text" placeholder="Talk about your programming experiences" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>School</label>
+                                <input type="text" placeholder="Enter your school's name" required>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="details ID">
+                        <span class="title">Guardian Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Parent Name</label>
+                                <input type="text" placeholder="Enter parent name" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Phone Number</label>
+                                <input type="number" placeholder="Enter parent phone number" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Parent email</label>
+                                <input type="text" placeholder="Enter parent email" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Relationship with Student</label>
+                                <input type="text" placeholder="Enter relationship w/ student" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Student's favorite interest (could be anything)</label>
+                                <input type="text" placeholder="Enter student's interest (for course)" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Interested in in-person workshops?</label>
+                                <select required>
+                                    <option disabled selected>Select options</option>
+                                    <option>Yes, I'm interested in letting my student participate in-person workshops related to Computer Science</option>
+                                    <option>No, I'm not interested</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="nextBtn">
+                                <span class="btnText">Next</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+                            
+                            <button class="sumbit">
+                                <span class="btnText">Submit</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+                        </div>
+                    </div> 
                 </div>
-                <div class="facility-col">
-                    <img src="images/teach.jpeg">
-                    <h3>Largest Play Ground</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+    
+                <div class="form second">
+                    <div class="details address">
+                        <span class="title">Address Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Student Name</label>
+                                <input type="text" placeholder="Enter student name" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Grade</label>
+                                <select required>
+                                    <option disabled selected>Select grade</option>
+                                    <option>9th grade</option>
+                                    <option>10th grade</option>
+                                    <option>11th grade</option>
+                                    <option>12th grade</option>
+                                    <option>other</option>
+                                </select>
+                            </div>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Student Email</label>
+                                <input type="text" placeholder="Enter your email" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Related Computer Science skills/experiences</label>
+                                <input type="text" placeholder="Enter your CS skills" required>
+                            </div>
+                                
+                            <div class="input-field">
+                                <label>Gender</label>
+                                <select required>
+                                    <option disabled selected>Select gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>School</label>
+                                <input type="text" placeholder="Enter your School Name" required>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="details ID">
+                        <span class="title">Guardian Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Parent Name</label>
+                                <input type="text" placeholder="Enter parent name" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Phone Number</label>
+                                <input type="number" placeholder="Enter parent phone number" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Parent email</label>
+                                <input type="text" placeholder="Enter parent email" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Relationship with Student</label>
+                                <input type="text" placeholder="Enter relationship w/ student" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Student's favorite interest (could be anything)</label>
+                                <input type="text" placeholder="Enter student's interest (for course)" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Interested in in-person volunteering?</label>
+                                <select required>
+                                    <option disabled selected>Select options</option>
+                                    <option>Yes, I'm interested volunteer in-person</option>
+                                    <option>No, I'm not interested</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="details family">
+                        <span class="title">Family Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Father Name</label>
+                                <input type="text" placeholder="Enter father name" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Mother Name</label>
+                                <input type="text" placeholder="Enter mother name" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Grandfather</label>
+                                <input type="text" placeholder="Enter grandfther name" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Spouse Name</label>
+                                <input type="text" placeholder="Enter spouse name" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Father in Law</label>
+                                <input type="text" placeholder="Father in law name" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Mother in Law</label>
+                                <input type="text" placeholder="Mother in law name" required>
+                            </div>
+                        </div>
+    
+                        <div class="buttons">
+                            <div class="backBtn">
+                                <i class="uil uil-navigator"></i>
+                                <span class="btnText">Back</span>
+                            </div>
+                            
+                            <button class="sumbit">
+                                <span class="btnText">Submit</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+                        </div>
+                    </div> 
                 </div>
-                <div class="facility-col">
-                    <img src="images/cafeteria.png">
-                    <h3>Tasty and Healthy Food</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
-                </div>
-            </div>
+            </form>
+        </div>
     </section>
     
 <!-------- footer ---------->
 
 <section class="footer">
         <h4><br><br>About Us</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est<br>sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+        <p>We provide learning opportunities for younger students to advance their coding skills<br> and inspire their interests to program.</p>
         <div class="icons">
             <a href="https://instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
         </div>
@@ -99,5 +315,7 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
+<script src="course.js"></script>
+
 </body>
 </html>    

@@ -202,7 +202,7 @@ h3{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/smartphone.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -324,6 +324,27 @@ h3{
     }
 } 
 
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    margin: center;
+    width: 100%;
+    text-align: center;
+    margin-left: 500px;
+}
+
+.campus-col img{
+    width: 450px;
+}
+
 
 /*------- Contact Us Page ------------*/
 
@@ -384,13 +405,3 @@ h3{
 .project{
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
