@@ -495,7 +495,7 @@ body {
     justify-content: space-between;  
 }
 
-.campus-col{
+.blog-col{
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -506,7 +506,7 @@ body {
     margin-left: 500px;
 }
 
-.campus-col img{
+.blog-col img{
     width: 450px;
 }
 
