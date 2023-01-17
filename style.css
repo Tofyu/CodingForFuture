@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/cube.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -84,8 +86,8 @@ nav .fa{
 }
 
 .hero-btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #89CFF0;
+    background: #89CFF0;
 }
 
 
@@ -98,7 +100,7 @@ nav .fa{
     .nav-links
     {
         position: fixed;
-        background: #f44336;
+        background: #c1e1ec;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -149,7 +151,7 @@ p{
   
 .course-col{
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #c1e1ec;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -162,7 +164,7 @@ h3{
     margin: 10px 0;
 }
 .course-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0px rgba(137, 207, 240, 1);
 }
 
 @media (max-width:700px){
@@ -170,8 +172,19 @@ h3{
         flex-direction: column;
     }
 } 
-
-/*---------------- campus ----------------*/
+.signup {
+    margin-top: -100%;
+    margin-bottom: 100px auto;
+    margin-left: 100px auto;
+    margin-right: 100px auto;
+    margin: auto;   
+    width: 80%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    
+}
 
 .campus{
     width: 80%;
@@ -200,7 +213,7 @@ h3{
     transition: .5s;
 }
 .layer:hover{
-    background: rgba(226, 0, 0, 0.7);
+    background: #c1e1ec;
 }
 .layer h3{
     width: 100%;
@@ -260,7 +273,7 @@ h3{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #fff3f3;
+    background: #c1e1ec;
     padding: 25px;
     cursor: pointer;
     display: flex;
@@ -344,7 +357,7 @@ h3{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/smartphone.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -394,6 +407,16 @@ h3{
     width: 100%;
 }
 
+body {
+    padding-top: 5rem;
+}
+.masthead {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/smartphone.jpg);
+    background-attachment: fixed;
+    height: 50vh;
+    background-size: cover;
+}
+
 /*---------- Blog Page -------------*/
 
 .blog-content{
@@ -417,11 +440,12 @@ h3{
 }
 .blog-left p{
     color: #999;
-    padding: 0;
+    padding: 5;
+    font-size:18px;
 }
 
 .blog-right h3{
-    background: #f44336;
+    background: #c1e1ec;
     color: #fff;
     padding: 7px 0;
     font-size: 16px;
@@ -435,6 +459,58 @@ h3{
     padding: 8px;
     box-sizing: border-box;
 }
+
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
+.comment-box h3{
+    text-align: left;
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+.comment-form button{
+    margin: 10px 0;
+}
+
+
+@media (max-width:700px){
+    .sub-header h1{
+        font-size: 24px;
+    }
+} 
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    margin: center;
+    width: 100%;
+    text-align: center;
+    margin-left: 500px;
+}
+
+.campus-col img{
+    width: 450px;
+}
+
+
 
 .comment-box{
     border: 1px solid #ccc;
@@ -528,10 +604,158 @@ h3{
 
 
 
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 100 100px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #4070f4;
+}
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.container form .form{
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+.container form .form.second{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+form.secActive .form.second{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+form.secActive .form.first{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field input :focus,
+.input-field select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field select,
+.input-field input[type="date"]{
+    color: #707070;
+}
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+.container form button, .backBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.container form .btnText{
+    font-size: 14px;
+    font-weight: 400;
+}
+form button:hover{
+    background-color: #265df2;
+}
+form button i,
+form .backBtn i{
+    margin: 0 6px;
+}
+form .backBtn i{
+    transform: rotate(180deg);
+}
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+form .buttons button , .backBtn{
+    margin-right: 14px;
+}
 
+@media (max-width: 750px) {
+    .container form{
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+       display: none;
+    }
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+}
 
-
-
-
-
-
+@media (max-width: 550px) {
+    form .fields .input-field{
+        width: 100%;
+    }
+}
