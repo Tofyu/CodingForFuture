@@ -1,0 +1,118 @@
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Coding Our Future - Contact Page</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" rel="stylesheet">
+</head>
+<header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md px-3 fixed-top bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-fluid" src="../images/logo.png" style="width: 5rem;">
+            </a>
+            <button class="navbar-toggler navbar-light" data-bs-target="#main-navigation" data-bs-toggle="collapse"
+                    type="button">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-3"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="course.html">COURSE</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="blog.html">BLOG</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<header class="masthead">
+    <div class="row align-items-center h-100">
+        <div class="col text-center">
+            <h1 class="text-light">
+                Contact Us
+            </h1>
+        </div>
+    </div>
+</header>
+
+<body>
+<!------- Contact Us ------->
+<section class="location">
+    <iframe allowfullscreen=""
+            height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10976.58481933603!2d-117.81331335681048!3d33.890815406571264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd3e47f030439%3A0x8f17483920416e9a!2sYorba%20Linda%20Public%20Library!5e0!3m2!1sen!2sus!4v1665122652228!5m2!1sen!2sus" style="border:0;"
+            width="600"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                            <h5>Xyz Road, Abc Building</h5>
+                            <p>Bangalore, Karnataka, IN</p>
+                        </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                            <h5>+1 0123456789</h5>
+                            <p>Monday to Saturday 10 Am to 6 Pm</p>
+                        </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                            <h5>info@easytutorialspro.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="../contact-form-handler.php" method="post">
+                <input name="name" placeholder="Enter your name" required type="text">
+                <input name="email" placeholder="Enter email address" required type="email">
+                <input name="subject" placeholder="Enter your subject" required type="text">
+                <textarea name="message" placeholder="Message" required rows="8"></textarea>
+                <button class="hero-btn red-btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-------- footer ---------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We provide learning opportunities for younger students to advance their coding skills<br> and inspire their
+        interests to program.</p>
+    <div class="icons">
+        <a href="https://instagram.com/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+    </div>
+
+</section>
+
+
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>    
